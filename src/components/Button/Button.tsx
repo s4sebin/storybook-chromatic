@@ -16,7 +16,7 @@ const StyledButton = styled.button<{
 }>(
   ({ clear, large, round, withIcon, theme: { color, boxShadow, borderRadius } }) => css`
     outline: none;
-    border: 0;
+    border: 2px solid red;
     font-family: 'Hind';
     border-radius: ${round ? borderRadius.xl : borderRadius.xs};
     display: inline-flex;
