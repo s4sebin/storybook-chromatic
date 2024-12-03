@@ -16,7 +16,7 @@ const StyledButton = styled.button<{
 }>(
   ({ clear, large, round, withIcon, theme: { color, boxShadow, borderRadius } }) => css`
     outline: none;
-    border: 0;
+    border: 2px solid orange;
     font-family: 'Hind';
     border-radius: ${round ? borderRadius.xl : borderRadius.xs};
     display: inline-flex;
@@ -110,7 +110,7 @@ export const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
         <Icon color={clear ? color.primaryText : color.buttonText} size={iconSize} name={icon} />
       )}
       {icon && children && <Spacer />}
-      x{children}x
+      {children}
     </StyledButton>
   )
 }
